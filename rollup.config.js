@@ -6,7 +6,7 @@ export default {
   external: ['w3c-keyname'],
   input: './codemirror.ts',
   output: {
-    format: 'cjs',
+    format: 'es',
     file: './dist/codemirror.js',
     sourcemap: true
   },
