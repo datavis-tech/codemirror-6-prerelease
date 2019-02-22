@@ -1,6 +1,6 @@
 {
   "name": "@datavis-tech/codemirror-6-prerelease",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Temporary package for organizing exports from CodeMirror 6.",
   "main": "dist/codemirror.js",
   "module": "dist/codemirror.js",
