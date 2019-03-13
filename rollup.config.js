@@ -1,14 +1,14 @@
-import typescript from 'rollup-plugin-typescript2'
-import commonjs from 'rollup-plugin-commonjs'
-import nodeResolve from 'rollup-plugin-node-resolve'
+import typescript from 'rollup-plugin-typescript2';
+import commonjs from 'rollup-plugin-commonjs';
+import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
-  external: ['w3c-keyname'],
+  external: ['w3c-keyname', 'style-mod'],
   input: './codemirror.ts',
   output: {
     format: 'es',
     file: './dist/codemirror.js',
-    sourcemap: true
+    sourcemap: false,
   },
   plugins: [
     nodeResolve(),
@@ -17,13 +17,11 @@ export default {
       tsconfigOverride: {
         compilerOptions: {
           lib: ['es5', 'es6', 'dom'],
-          sourceMap: true,
-          target: 'es5',
-          strict: false
+          strict: false,
         },
-        include: null
-      }
+        include: null,
+      },
     }),
-    commonjs()
-  ]
-}
+    commonjs(),
+  ],
+};

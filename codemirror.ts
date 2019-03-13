@@ -6,8 +6,11 @@ export {
   Transaction,
   Change,
 } from './codemirror.next/state/src';
+
 export {EditorView} from './codemirror.next/view/src/';
+
 export {keymap} from './codemirror.next/keymap/src/keymap';
+
 export {
   history,
   redo,
@@ -15,14 +18,23 @@ export {
   undo,
   undoSelection,
 } from './codemirror.next/history/src/history';
-export {gutter} from './codemirror.next/gutter/src/index';
-export {baseKeymap} from './codemirror.next/commands/src/commands';
-export {matchBrackets} from './codemirror.next/matchbrackets/src/matchbrackets';
-export {specialChars} from './codemirror.next/special-chars/src/special-chars';
+
+export {lineNumbers} from './codemirror.next/gutter/src/index';
+
 export {
-  multipleSelections,
-} from './codemirror.next/multiple-selections/src/multiple-selections';
+  baseKeymap,
+  indentSelection,
+} from './codemirror.next/commands/src/commands';
+
 export {legacyMode} from './codemirror.next/legacy-modes/src/index';
+
+export {matchBrackets} from './codemirror.next/matchbrackets/src/matchbrackets';
 
 import javascript from './codemirror.next/legacy-modes/src/javascript';
 export {javascript};
+
+export {specialChars} from './codemirror.next/special-chars/src/special-chars';
+
+export {
+  multipleSelections,
+} from './codemirror.next/multiple-selections/src/multiple-selections';
