@@ -3,10 +3,10 @@ import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
-  external: ['w3c-keyname', 'style-mod'],
   input: './codemirror.ts',
   output: {
-    format: 'es',
+    format: 'umd',
+    name: 'CodeMirror',
     file: './dist/codemirror.js',
     sourcemap: false,
   },
@@ -18,6 +18,7 @@ export default {
         compilerOptions: {
           lib: ['es5', 'es6', 'dom'],
           strict: false,
+          target: 'es5'
         },
         include: null,
       },
