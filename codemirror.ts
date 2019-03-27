@@ -33,6 +33,9 @@ export {matchBrackets} from './codemirror.next/matchbrackets/src/matchbrackets';
 import javascript from './codemirror.next/legacy-modes/src/javascript';
 export {javascript};
 
+import css from './modes/css';
+export {css};
+
 export {specialChars} from './codemirror.next/special-chars/src/special-chars';
 
 export {
