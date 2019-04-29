@@ -1,16 +1,9 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
-
-"use strict";
-
-// This tiny shim allows the mode code to go mostly unmodified.
-const modes = {};
-const CodeMirror = {
-  defineMIME: (key, value) => modes[key] = value,
-  resolveMode: key => modes[key]
-};
-
 // Ported from https://github.com/codemirror/CodeMirror/blob/master/mode/css/css.js
+
+import { CodeMirror } from './shim';
+
 export default function(config, parserConfig) {
   var inline = parserConfig.inline
   if (!parserConfig.propertyKeywords) parserConfig = CodeMirror.resolveMode("text/css");

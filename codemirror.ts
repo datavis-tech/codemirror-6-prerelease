@@ -26,18 +26,23 @@ export {
   indentSelection,
 } from './codemirror.next/commands/src/commands';
 
-export {legacyMode} from './codemirror.next/legacy-modes/src/index';
-
 export {matchBrackets} from './codemirror.next/matchbrackets/src/matchbrackets';
-
-import javascript from './codemirror.next/legacy-modes/src/javascript';
-export {javascript};
-
-import css from './modes/css';
-export {css};
 
 export {specialChars} from './codemirror.next/special-chars/src/special-chars';
 
 export {
   multipleSelections,
 } from './codemirror.next/multiple-selections/src/multiple-selections';
+
+export {legacyMode} from './codemirror.next/legacy-modes/src/index';
+
+import javascript from './codemirror.next/legacy-modes/src/javascript';
+import css from './modes/css';
+import xml from './modes/xml';
+
+export const legacyModes = {
+  javascript,
+  css,
+  xml
+};
+
