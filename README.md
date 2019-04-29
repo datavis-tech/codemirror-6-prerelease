@@ -2,6 +2,6 @@
 
 Unstable unofficial pre-release package wrapping [CodeMirror 6](https://github.com/codemirror/codemirror.next).
 
-This package will be deprecated as soon as the official CodeMirror 6 package is released.
+Check out the [demo](https://bl.ocks.org/curran/d8de41605fa68b627defa9906183b92f)!
 
-See [CodeMirror.next issue: "Release packages on NPM"](https://github.com/codemirror/codemirror.next/issues/19).
+This package will be deprecated as soon as the [official CodeMirror 6 packages](https://github.com/codemirror/codemirror.next/issues/19) are released.
