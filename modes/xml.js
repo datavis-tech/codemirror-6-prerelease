@@ -1,7 +1,8 @@
-// Ported from https://github.com/codemirror/CodeMirror/blob/master/mode/css/css.js
-
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
+// Ported from https://github.com/codemirror/CodeMirror/blob/master/mode/xml/xml.js
+
+import { CodeMirror } from './shim';
 
 var htmlConfig = {
   autoSelfClosers: {'area': true, 'base': true, 'br': true, 'col': true, 'command': true,
@@ -334,7 +335,7 @@ export default function(editorConf, config_) {
         else
           return state.indented + indentUnit;
       }
-      if (context && context.noIndent) return CodeMirror.Pass;
+      // if (context && context.noIndent) return CodeMirror.Pass;
       if (state.tokenize != inTag && state.tokenize != inText)
         return fullLine ? fullLine.match(/^(\s*)/)[0].length : 0;
       // Indent the starts of attribute names.
