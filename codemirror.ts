@@ -36,13 +36,12 @@ export {
 
 export {legacyMode} from './codemirror.next/legacy-modes/src/index';
 
-import javascript from './codemirror.next/legacy-modes/src/javascript';
-import css from './modes/css';
-import xml from './modes/xml';
+import legacyModeJavaScript from './codemirror.next/legacy-modes/src/javascript';
+import legacyModeXML from './legacyModes/xml';
+import legacyModeCSS from './legacyModes/css';
 
-export const legacyModes = {
-  javascript,
-  css,
-  xml
+export {
+  legacyModeJavaScript,
+  legacyModeCSS,
+  legacyModeXML
 };
-
