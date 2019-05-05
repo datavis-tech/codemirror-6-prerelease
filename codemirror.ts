@@ -39,10 +39,12 @@ export {legacyMode} from './codemirror.next/legacy-modes/src/index';
 import javascript from './codemirror.next/legacy-modes/src/javascript';
 import css from './modes/css';
 import xml from './modes/xml';
+import htmlmixed from './modes/htmlmixed';
 
 export const legacyModes = {
   javascript,
   css,
-  xml
+  xml,
+  htmlmixed
 };
 
